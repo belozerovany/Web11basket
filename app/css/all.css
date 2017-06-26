@@ -336,7 +336,16 @@ header {
 .body .product-card {
   border: 1px solid #e8e8e8;
   padding: 23px 52px 0 0;
-  margin-bottom: 21px; }
+  margin-bottom: 21px;
+  position: relative; }
+  .body .product-card:hover:after {
+    content: '\1F7A9';
+    position: absolute;
+    left: 95%;
+    top: 10px;
+    display: block;
+    color: #373737;
+    font-size: 20px; }
 .body .bathroom {
   display: block;
   float: left;
@@ -400,6 +409,14 @@ header {
     .body .info-bathroom tbody tr th:hover > .left-add, .body .info-bathroom tbody tr th:hover > .right-add {
       display: block;
       cursor: pointer; }
+    .body .info-bathroom tbody tr th:hover:after {
+      content: '\1F7A9';
+      position: absolute;
+      right: -100%;
+      top: -3px;
+      display: block;
+      color: #373737;
+      font-size: 20px; }
   .body .info-bathroom tbody .first-td {
     width: 130px;
     padding-right: 0; }
