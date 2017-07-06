@@ -401,122 +401,123 @@ header{
 			}
 		} 
 	} 
-	.total-info{
+	.wrapper-order{
 		float: right;
 		width: 45%;
-		.total{
-			font-family: $OpenSans-Light;
-			font-size: 22px;
-			color:$color-black;
-			padding-bottom: 33px;
-			margin-bottom: 35px;
-			border-bottom: 1px solid $color-bluegray;
-			.total-price{
-				font-family: $OpenSans-SemiBold;
-				font-size: 30px;
-				span{
-					font-size: 24px;
+		.total-info{
+			.total{
+				font-family: $OpenSans-Light;
+				font-size: 22px;
+				color:$color-black;
+				padding-bottom: 33px;
+				margin-bottom: 35px;
+				border-bottom: 1px solid $color-bluegray;
+				.total-price{
+					font-family: $OpenSans-SemiBold;
+					font-size: 30px;
+					span{
+						font-size: 24px;
+					}
 				}
 			}
-		}
-		.info-total-price{
-			font-family: $OpenSans-Regular;
-			font-size: 13px;
-			color: $color-black;
-			margin-top: 30px;
-			line-height: 22px;
-		}
-	}
-	.decor-order{
-		float: right;
-		width: 45%;
-		h2{
-			font-size: 24px;
-			font-family: $OpenSans-Light;
-			color:$color-black;
-			padding-bottom: 26px;
-			border-bottom: 1px solid $color-bluegray;
-			margin-bottom: 30px;
-		}
-		h3{
-			font-family: $OpenSans-Bold;
-			font-size: 14px;
-			color:  $color-black;
-			padding-bottom: 27px;
-			text-transform: uppercase;
-
-		}
-		.main-radio{
-			padding-bottom: 28px;
-			border-bottom: 1px solid $color-bluegray;
-			margin-bottom: 33px;
-			label{
-				font-family:$OpenSans-Regular;
-				font-size: 12px;
-				position: relative;
-				cursor: pointer;
-				display: inline-block;
-				padding: 3px 0 20px 25px;
-				&:before{
-					content: '';
-					position: absolute;
-					width: 15px;
-					height: 15px;
-					border-radius:8px;
-					display: inline-block;
-					left: -5px;
-					top:0;
-					border: 1px solid $color-9898;
-					background-color:transparent; 
-				}
-			}
-			input[type="radio"]{
-				display: none;
-			}
-			input[type="radio"]:checked +label:before{
-
-					content:'\2022';
-					color:$color-orange;
-					font-size: 35px;
-					text-align: center;
-					line-height: 15px;
-			}
-		}
-		.all-info{
-			li:first-child{
+			.info-total-price{
 				font-family: $OpenSans-Regular;
-				font-size: 14px;
-				padding-bottom: 28px;
-				span{font-size: 18px;
-					padding-left: 10px;
-					.grn{font-size: 16px}
-				}
+				font-size: 13px;
+				color: $color-black;
+				margin-top: 30px;
+				line-height: 22px;
 			}
-			li:nth-child(2n){
-				font-family:$OpenSans-Light;
-				font-size: 16px;
+		}
+		.decor-order{
+			display: none;
+			h2{
+				font-size: 24px;
+				font-family: $OpenSans-Light;
+				color:$color-black;
 				padding-bottom: 26px;
 				border-bottom: 1px solid $color-bluegray;
-				margin-bottom: 34px;
-				span{
-					font-size: 24px;
-					padding-left: 10px;
-					.grn{font-size: 18px}
+				margin-bottom: 30px;
+			}
+			h3{
+				font-family: $OpenSans-Bold;
+				font-size: 14px;
+				color:  $color-black;
+				padding-bottom: 27px;
+				text-transform: uppercase;
+
+			}
+			.main-radio{
+				padding-bottom: 28px;
+				border-bottom: 1px solid $color-bluegray;
+				margin-bottom: 33px;
+				label{
+					font-family:$OpenSans-Regular;
+					font-size: 12px;
+					position: relative;
+					cursor: pointer;
+					display: inline-block;
+					padding: 3px 0 20px 25px;
+					&:before{
+						content: '';
+						position: absolute;
+						width: 15px;
+						height: 15px;
+						border-radius:8px;
+						display: inline-block;
+						left: -5px;
+						top:0;
+						border: 1px solid $color-9898;
+						background-color:transparent; 
+					}
+				}
+				input[type="radio"]{
+					display: none;
+				}
+				input[type="radio"]:checked +label:before{
+
+						content:'\2022';
+						color:$color-orange;
+						font-size: 35px;
+						text-align: center;
+						line-height: 15px;
 				}
 			}
-			li:nth-child(3n){
-				font-family:$OpenSans-Light;
-				font-size: 22px;
-				padding-bottom: 34px;
-				span{
-					font-size: 30px;
-					font-family: $OpenSans-Bold;
-					padding-left: 10px;
-					.grn{font-size: 24px}
+			.all-info{
+				li:first-child{
+					font-family: $OpenSans-Regular;
+					font-size: 14px;
+					padding-bottom: 28px;
+					span{font-size: 18px;
+						padding-left: 10px;
+						.grn{font-size: 16px}
+					}
 				}
-			}
-		}	
-	} 
+				li:nth-child(2n){
+					font-family:$OpenSans-Light;
+					font-size: 16px;
+					padding-bottom: 26px;
+					border-bottom: 1px solid $color-bluegray;
+					margin-bottom: 34px;
+					span{
+						font-size: 24px;
+						padding-left: 10px;
+						.grn{font-size: 18px}
+					}
+				}
+				li:nth-child(3n){
+					font-family:$OpenSans-Light;
+					font-size: 22px;
+					padding-bottom: 34px;
+					span{
+						font-size: 30px;
+						font-family: $OpenSans-Bold;
+						padding-left: 10px;
+						.grn{font-size: 24px}
+					}
+				}
+			}	
+		}
+	}	 
 }
 /* -------------------------------------/body---------------------------------- */
 
@@ -526,14 +527,22 @@ header{
 
 
 /* -------------------------------------media---------------------------------- */
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1142px) {
   header .header-menu li{
   	padding: 15px 15px;
   }
-  /* .body .total-info{
+   .body .wrapper-order {
   	float: none;
-  	margin-left: 40px;
-  } */
+  	margin: 0 0 40px 40px;
+  	width: 100%;
+  	max-width: 650px;
+  }  
+
+  .body .cards {
+    float: none;
+    max-width: 650px;
+    margin: 0 0 40px 40px;
+	}
 }
 @media screen and (max-width: 954px){
 	header .header-menu li:first-child:hover:before{
@@ -547,6 +556,9 @@ header{
 	header .header-menu a{
 		line-height: 17px;
 	}
+	.body .total-info, .body .decor-order{
+	
+  } 
 }
 @media screen and (max-width: 936px){
 	header .header-menu{display: none;}
@@ -570,5 +582,19 @@ header{
 	}
 	header .nav li a{
 		padding: 0;
+	}
+}
+@media screen and (max-width: 637px){
+	.body .bathroom{
+		float: none;
+	}
+	table{
+		margin-left: 40px;
+	}
+	.body .product-card{
+		margin-right: 40px;
+	}
+	.total-info, .decor-order{
+		margin-right: 60px;
 	}
 }

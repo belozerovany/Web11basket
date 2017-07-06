@@ -434,116 +434,121 @@ header {
   .body .info-bathroom .footer-table .price {
     font-family: "OpenSans-SemiBold";
     font-size: 18px; }
-.body .total-info {
+.body .wrapper-order {
   float: right;
   width: 45%; }
-  .body .total-info .total {
+  .body .wrapper-order .total-info .total {
     font-family: "OpenSans-Light";
     font-size: 22px;
     color: #000;
     padding-bottom: 33px;
     margin-bottom: 35px;
     border-bottom: 1px solid #e8e8e8; }
-    .body .total-info .total .total-price {
+    .body .wrapper-order .total-info .total .total-price {
       font-family: "OpenSans-SemiBold";
       font-size: 30px; }
-      .body .total-info .total .total-price span {
+      .body .wrapper-order .total-info .total .total-price span {
         font-size: 24px; }
-  .body .total-info .info-total-price {
+  .body .wrapper-order .total-info .info-total-price {
     font-family: "OpenSans-Regular";
     font-size: 13px;
     color: #000;
     margin-top: 30px;
     line-height: 22px; }
-.body .decor-order {
-  float: right;
-  width: 45%; }
-  .body .decor-order h2 {
-    font-size: 24px;
-    font-family: "OpenSans-Light";
-    color: #000;
-    padding-bottom: 26px;
-    border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 30px; }
-  .body .decor-order h3 {
-    font-family: "OpenSans-Bold";
-    font-size: 14px;
-    color: #000;
-    padding-bottom: 27px;
-    text-transform: uppercase; }
-  .body .decor-order .main-radio {
-    padding-bottom: 28px;
-    border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 33px; }
-    .body .decor-order .main-radio label {
-      font-family: "OpenSans-Regular";
-      font-size: 12px;
-      position: relative;
-      cursor: pointer;
-      display: inline-block;
-      padding: 3px 0 20px 25px; }
-      .body .decor-order .main-radio label:before {
-        content: '';
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        border-radius: 8px;
-        display: inline-block;
-        left: -5px;
-        top: 0;
-        border: 1px solid #989898;
-        background-color: transparent; }
-    .body .decor-order .main-radio input[type="radio"] {
-      display: none; }
-    .body .decor-order .main-radio input[type="radio"]:checked + label:before {
-      content: '\2022';
-      color: #f78421;
-      font-size: 35px;
-      text-align: center;
-      line-height: 15px; }
-  .body .decor-order .all-info li:first-child {
-    font-family: "OpenSans-Regular";
-    font-size: 14px;
-    padding-bottom: 28px; }
-    .body .decor-order .all-info li:first-child span {
-      font-size: 18px;
-      padding-left: 10px; }
-      .body .decor-order .all-info li:first-child span .grn {
-        font-size: 16px; }
-  .body .decor-order .all-info li:nth-child(2n) {
-    font-family: "OpenSans-Light";
-    font-size: 16px;
-    padding-bottom: 26px;
-    border-bottom: 1px solid #e8e8e8;
-    margin-bottom: 34px; }
-    .body .decor-order .all-info li:nth-child(2n) span {
+  .body .wrapper-order .decor-order {
+    display: none; }
+    .body .wrapper-order .decor-order h2 {
       font-size: 24px;
-      padding-left: 10px; }
-      .body .decor-order .all-info li:nth-child(2n) span .grn {
-        font-size: 18px; }
-  .body .decor-order .all-info li:nth-child(3n) {
-    font-family: "OpenSans-Light";
-    font-size: 22px;
-    padding-bottom: 34px; }
-    .body .decor-order .all-info li:nth-child(3n) span {
-      font-size: 30px;
+      font-family: "OpenSans-Light";
+      color: #000;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #e8e8e8;
+      margin-bottom: 30px; }
+    .body .wrapper-order .decor-order h3 {
       font-family: "OpenSans-Bold";
-      padding-left: 10px; }
-      .body .decor-order .all-info li:nth-child(3n) span .grn {
-        font-size: 24px; }
+      font-size: 14px;
+      color: #000;
+      padding-bottom: 27px;
+      text-transform: uppercase; }
+    .body .wrapper-order .decor-order .main-radio {
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e8e8e8;
+      margin-bottom: 33px; }
+      .body .wrapper-order .decor-order .main-radio label {
+        font-family: "OpenSans-Regular";
+        font-size: 12px;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        padding: 3px 0 20px 25px; }
+        .body .wrapper-order .decor-order .main-radio label:before {
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          border-radius: 8px;
+          display: inline-block;
+          left: -5px;
+          top: 0;
+          border: 1px solid #989898;
+          background-color: transparent; }
+      .body .wrapper-order .decor-order .main-radio input[type="radio"] {
+        display: none; }
+      .body .wrapper-order .decor-order .main-radio input[type="radio"]:checked + label:before {
+        content: '\2022';
+        color: #f78421;
+        font-size: 35px;
+        text-align: center;
+        line-height: 15px; }
+    .body .wrapper-order .decor-order .all-info li:first-child {
+      font-family: "OpenSans-Regular";
+      font-size: 14px;
+      padding-bottom: 28px; }
+      .body .wrapper-order .decor-order .all-info li:first-child span {
+        font-size: 18px;
+        padding-left: 10px; }
+        .body .wrapper-order .decor-order .all-info li:first-child span .grn {
+          font-size: 16px; }
+    .body .wrapper-order .decor-order .all-info li:nth-child(2n) {
+      font-family: "OpenSans-Light";
+      font-size: 16px;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #e8e8e8;
+      margin-bottom: 34px; }
+      .body .wrapper-order .decor-order .all-info li:nth-child(2n) span {
+        font-size: 24px;
+        padding-left: 10px; }
+        .body .wrapper-order .decor-order .all-info li:nth-child(2n) span .grn {
+          font-size: 18px; }
+    .body .wrapper-order .decor-order .all-info li:nth-child(3n) {
+      font-family: "OpenSans-Light";
+      font-size: 22px;
+      padding-bottom: 34px; }
+      .body .wrapper-order .decor-order .all-info li:nth-child(3n) span {
+        font-size: 30px;
+        font-family: "OpenSans-Bold";
+        padding-left: 10px; }
+        .body .wrapper-order .decor-order .all-info li:nth-child(3n) span .grn {
+          font-size: 24px; }
 
 /* -------------------------------------/body---------------------------------- */
 /* -------------------------------------footer--------------------------------- */
 /* ------------------------------------/footer--------------------------------- */
 /* -------------------------------------media---------------------------------- */
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1142px) {
   header .header-menu li {
     padding: 15px 15px; }
 
-  /* .body .total-info{
-  	float: none;
-  	margin-left: 40px;
-  } */ }
+  .body .wrapper-order {
+    float: none;
+    margin: 0 0 40px 40px;
+    width: 100%;
+    max-width: 650px; }
+
+  .body .cards {
+    float: none;
+    max-width: 650px;
+    margin: 0 0 40px 40px; } }
 @media screen and (max-width: 954px) {
   header .header-menu li:first-child:hover:before {
     left: 10px;
@@ -579,5 +584,17 @@ header {
 
   header .nav li a {
     padding: 0; } }
+@media screen and (max-width: 637px) {
+  .body .bathroom {
+    float: none; }
+
+  table {
+    margin-left: 40px; }
+
+  .body .product-card {
+    margin-right: 40px; }
+
+  .total-info, .decor-order {
+    margin-right: 60px; } }
 
 /*# sourceMappingURL=all.css.map */
