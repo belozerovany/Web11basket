@@ -193,7 +193,6 @@ header{
 		margin-bottom: 31px;
 	}
 	.order-ul{
-		padding: 18px 0;
 		background:$color-eb;
 		display: table;
 		position: relative;
@@ -208,32 +207,36 @@ header{
 			width: 300px;
 			min-width: 118px;
 		}
-		li:before{
+		/* li:before{
 			content: '';
 			position: absolute;
 			width: 2px;
 			height: 27px;
 			background-color: $color-c1c1;	
 			left: 100%;
-		}
+		} */
 		li:last-child:before{
 			content: none;
 		}
-		li:first-child a{
+		li:first-child p{
 			font-family: $OpenSans-SemiBold;
 			font-size: 14px;
+			line-height: 20px;
 			color: $color-orange;
 			border-bottom: 2px solid $color-liteorange;
 			text-decoration: none;
 			position: relative;
+			display: inline-block;
+			padding: 18px 5px 0 5px;
+			margin-bottom: 20px;
 		}
-		li:first-child a:after{
+		li:first-child p:after{
 			position: absolute;
 			content: '';
 			background:transparent url('../img/more.png') left top no-repeat;
 			width: 12px;
 			height: 6px;
-			top: 40%;
+			top: 70%;
 			right: -20px;
 		}
 		#order-price{
@@ -277,20 +280,23 @@ header{
 		}
 	}
 	.cards{float: left;}
-	.product{display: none;} 
+	/* .product{display: none;}  */
 	.product-card{
 		border: 1px solid $color-bluegray;
 		padding: 23px 52px 0 0 ;
 		margin-bottom: 21px;
 		position: relative;
-		&:hover:after{
-			content: '\1F7A9';
-			position:absolute;
-			left: 95%;
-			top:10px;
-			display: block;
+		.cross{
 			color: $color-373737;
 			font-size: 20px;
+			padding: 10px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: none;
+		}
+		&:hover .cross{
+			display: inline-block;
 		}
 	}
 	.bathroom{
@@ -415,9 +421,11 @@ header{
 				.total-price{
 					font-family: $OpenSans-SemiBold;
 					font-size: 30px;
-					span{
-						font-size: 24px;
-					}
+				}
+				.total-price-span{
+					font-family: $OpenSans-SemiBold;
+					font-size: 30px;
+					font-size: 24px;
 				}
 			}
 			.info-total-price{
@@ -596,5 +604,13 @@ header{
 	}
 	.total-info, .decor-order{
 		margin-right: 60px;
+	}
+	.body .order-ul{
+		display: block;
+	}
+	.body .order-ul li{
+		display: block;
+		padding: 5px 20px 10px 40px;
+		text-align: left;
 	}
 }

@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>basket</title>
 	<link rel="stylesheet" href="css/all.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <!-- 	<link href="media-queries.css" rel="stylesheet" type="text/css"> -->
 	<script src="js/file-js.js"></script>
 	<header>
@@ -48,266 +49,515 @@
 	<section class="body">
 		<div class="container">
 			<h2 class="h2">Оформление заказа</h2>
-			<div class="main-order">
-				<ul class="order-ul clearfix">
-					<li><a href="#" class="order">Заказ № <span>1743</span></a></li>
-					<li id="order-price">Сумма заказа:<span class="price">28 083</span>грн
-					</li>
-					<li id="status">Статус:<span class="status-now">в обработке</span></li>
-					<li class="more-info">
-						<a href="#">Подробнее</a>
-					</li>
-				</ul>
-				<div class="product clearfix">
-					<div class="cards">
-						<div class="clearfix product-card">
-							<img class="bathroom" src="img/bathroom.png" alt="bathroom">
-							<table class="info-bathroom">
-								<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
-								<tbody>
-									<tr class="caption">
-										<td class="first-td">Номенклатура</td>
-										<td>Цена, грн</td>
-										<td>Кол-во</td>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 160×100 правая</td>
-										<td>1732,20 грн</td>
-										<th>2
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 160×100 левая</td>
-										<td>1832,20 грн</td>
-										<th>5
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 170×100 правая</td>
-										<td>1932,20 грн</td>
-										<th>1
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 170×100 левая</td>
-										<td>1932,20 грн</td>
-										<th>6
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr class="tr-footer">
-										<td class="first-td">Панель Meza 160/170</td>
-										<td>1932,20 грн</td>
-										<th >13
-											<div class="left-add">
-											</div>
-											<div class="right-add">
-											</div>
-										</th>
-									</tr>
-								</tbody>
-								<caption class="footer-table">Общая стоимость: <span class="price">9 361 грн</span></caption>
-							</table>
+			<div id="container-order">
+				<div class="main-order">
+					<ul class="order-ul clearfix">
+						<li class="block-order"><p class="order">Заказ № <span class="order-span">1743</span></p></li>
+						<li id="order-price">Сумма заказа:<span class="price">28 083</span>грн
+						</li>
+						<li id="status">Статус:<span class="status-now">в обработке</span></li>
+						<li class="more-info">
+							<a href="#">Подробнее</a>
+						</li>
+					</ul>
+					<div class="product clearfix del">
+						<div class="cards">
+							<div class="clearfix product-card">
+								<img class="bathroom" src="img/bathroom.png" alt="bathroom">
+								<table class="info-bathroom">
+									<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
+									<tbody>
+										<tr class="caption">
+											<td class="first-td">Номенклатура</td>
+											<td>Цена, грн</td>
+											<td>Кол-во</td>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 правая</td>
+											<td>1732,20 грн</td>
+											<th>2
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 левая</td>
+											<td>1832,20 грн</td>
+											<th>5
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 правая</td>
+											<td>1932,20 грн</td>
+											<th>1
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 левая</td>
+											<td>1932,20 грн</td>
+											<th>6
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr class="tr-footer">
+											<td class="first-td">Панель Meza 160/170</td>
+											<td>1932,20 грн</td>
+											<th >13
+												<div class="left-add">
+												</div>
+												<div class="right-add">
+												</div>
+											</th>
+										</tr>
+									</tbody>
+									<caption class="footer-table">Общая стоимость: <span class="price">9 361 грн</span></caption>
+								</table>
+								<div ><span class="fa fa-times cross" aria-hidden="true"></span></div>
+							</div>
+							<div class="clearfix product-card">
+								<img class="bathroom" src="img/bathroom.png" alt="bathroom">
+								<table class="info-bathroom">
+									<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
+									<tbody>
+										<tr class="caption">
+											<td class="first-td">Номенклатура</td>
+											<td>Цена, грн</td>
+											<td>Кол-во</td>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 правая</td>
+											<td>1732,20 грн</td>
+											<th>2
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 левая</td>
+											<td>1832,20 грн</td>
+											<th>5
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 правая</td>
+											<td>1932,20 грн</td>
+											<th>1
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 левая</td>
+											<td>1932,20 грн</td>
+											<th>6
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr class="tr-footer">
+											<td class="first-td">Панель Meza 160/170</td>
+											<td>1932,20 грн</td>
+											<th >13
+												<div class="left-add">
+												</div>
+												<div class="right-add">
+												</div>
+											</th>
+										</tr>
+									</tbody>
+									<caption class="footer-table">Общая стоимость: <span class="price getPrice">9 361 грн</span></caption>
+								</table>
+								<div ><span class="fa fa-times cross" aria-hidden="true"></span></div>
+							</div>
+							<div class="clearfix product-card">
+								<img class="bathroom" src="img/bathroom.png" alt="bathroom">
+								<table class="info-bathroom">
+									<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
+									<tbody>
+										<tr class="caption">
+											<td class="first-td">Номенклатура</td>
+											<td>Цена, грн</td>
+											<td>Кол-во</td>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 правая</td>
+											<td>1732,20 грн</td>
+											<th>2
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 левая</td>
+											<td>1832,20 грн</td>
+											<th>5
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 правая</td>
+											<td>1932,20 грн</td>
+											<th>1
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 левая</td>
+											<td>1932,20 грн</td>
+											<th>6
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr class="tr-footer">
+											<td class="first-td">Панель Meza 160/170</td>
+											<td>1932,20 грн</td>
+											<th >13
+												<div class="left-add">
+												</div>
+												<div class="right-add">
+												</div>
+											</th>
+										</tr>
+									</tbody>
+									<caption class="footer-table">Общая стоимость: <span class="price">9 361 грн</span></caption>
+								</table>
+								<div ><span class="fa fa-times cross" aria-hidden="true"></span></div>
+							</div>
 						</div>
-						<div class="clearfix product-card">
-							<img class="bathroom" src="img/bathroom.png" alt="bathroom">
-							<table class="info-bathroom">
-								<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
-								<tbody>
-									<tr class="caption">
-										<td class="first-td">Номенклатура</td>
-										<td>Цена, грн</td>
-										<td>Кол-во</td>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 160×100 правая</td>
-										<td>1732,20 грн</td>
-										<th>2
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 160×100 левая</td>
-										<td>1832,20 грн</td>
-										<th>5
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 170×100 правая</td>
-										<td>1932,20 грн</td>
-										<th>1
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 170×100 левая</td>
-										<td>1932,20 грн</td>
-										<th>6
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr class="tr-footer">
-										<td class="first-td">Панель Meza 160/170</td>
-										<td>1932,20 грн</td>
-										<th >13
-											<div class="left-add">
-											</div>
-											<div class="right-add">
-											</div>
-										</th>
-									</tr>
-								</tbody>
-								<caption class="footer-table">Общая стоимость: <span class="price">9 361 грн</span></caption>
-							</table>
-						</div>
-						<div class="clearfix product-card">
-							<img class="bathroom" src="img/bathroom.png" alt="bathroom">
-							<table class="info-bathroom">
-								<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
-								<tbody>
-									<tr class="caption">
-										<td class="first-td">Номенклатура</td>
-										<td>Цена, грн</td>
-										<td>Кол-во</td>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 160×100 правая</td>
-										<td>1732,20 грн</td>
-										<th>2
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 160×100 левая</td>
-										<td>1832,20 грн</td>
-										<th>5
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 170×100 правая</td>
-										<td>1932,20 грн</td>
-										<th>1
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr>
-										<td class="first-td">Meza 170×100 левая</td>
-										<td>1932,20 грн</td>
-										<th>6
-											<div class="left-add"></div>
-											<div class="right-add"></div>
-										</th>
-									</tr>
-									<tr class="tr-footer">
-										<td class="first-td">Панель Meza 160/170</td>
-										<td>1932,20 грн</td>
-										<th >13
-											<div class="left-add">
-											</div>
-											<div class="right-add">
-											</div>
-										</th>
-									</tr>
-								</tbody>
-								<caption class="footer-table">Общая стоимость: <span class="price">9 361 грн</span></caption>
-							</table>
-						</div>
-					</div>
-					<div class="wrapper-order">
-						<div class="total-info">
-							<p class="total">Итого к оплате: <span class="total-price">28 083 <span>грн</span></span>	</p>
-								<button class="button-orange" id="button-total-info">Отправить заказ</button>
-							<p class="info-total-price">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-						<div class="decor-order">
-							<h2>Выберите способ оплаты и доставки:</h2>
-							<h3>Способ оплаты</h3>
-							<ul class="main-radio">
-								<li>
-									<input type="radio" name="payment-method" class="radio" id="cards">
-									<label for="cards">Банковской картой</label>
-								</li>
-								<li>
-									<input type="radio" name="payment-method" class="radio" id="cash">
-									<label for="cash">Наличными (самовывоз)</label>
-								</li>
-								<li>
-									<input type="radio" name="payment-method" class="radio" id="non-cash">
-									<label for="non-cash">Безналичный расчет</label>
-								</li>
-								<li>
-									<input type="radio" name="payment-method" class="radio" id="imposed">
-									<label for="imposed">Оплата при получении (наложенный платеж)</label>
-								</li>
-							</ul>
-							<h3>Способ доставки</h3>
-							<ul class="main-radio">
-								<li>
-									<input type="radio" name="payment" class="radiobut" id="payment-cards">
-									<label for="payment-cards">Банковской картой</label>
-								</li>
-								<li>
-									<input type="radio" name="payment" class="radio" id="payment-cash">
-									<label for="payment-cash">Наличными (самовывоз)</label>
-								</li>
-								<li>
-									<input type="radio" name="payment" class="radio" id="payment-non-cash">
-									<label for="payment-non-cash">Безналичный расчет</label>
-								</li>
-								<li>
-									<input type="radio" name="payment" class="radio" id="payment-imposed">
-									<label for="payment-imposed">Оплата при получении (наложенный платеж)</label>
-								</li>
-							</ul>
-							<h3>Адрес доставки</h3>
-							<ul class="main-radio">
-								<li>
-									<input type="radio" name="address" class="radio" id="address-cards">
-									<label for="address-cards">Склад на Героев Труда —  г. Харьков, ул. Героев Труда 9А</label>
-								</li>
-								<li>
-									<input type="radio" name="address" class="radio" id="address-cash">
-									<label for="address-cash">Склад-магазин «Сантехника» —  г. Харьков, Комсомольское шоссе 11</label>
-								</li>
-							</ul>
-							<ul class="all-info">
-								<li>Ваша скидка (-5%): <span>1 404<span class="grn">грн</span></span></li>
-								<li>Сумма к оплате:<span>28 083<span class="grn">грн</span></span></li>
-								<li>Итого к оплате:<span>26 679<span class="grn">грн</span></span></li>
-								<li><input type="submit" value="Оформить заказ" class="button-orange"></li>
-							</ul>	
+						<div class="wrapper-order">
+							<div class="total-info">
+								<p class="total">Итого к оплате: <span class="total-price">28 083 </span><span class="total-price-span">грн</span></p>
+									<button class="button-orange" id="button-total-info">Отправить заказ</button>
+								<p class="info-total-price">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="decor-order">
+								<h2>Выберите способ оплаты и доставки:</h2>
+								<h3>Способ оплаты</h3>
+								<ul class="main-radio">
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="cards">
+										<label for="cards">Банковской картой</label>
+									</li>
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="cash">
+										<label for="cash">Наличными (самовывоз)</label>
+									</li>
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="non-cash">
+										<label for="non-cash">Безналичный расчет</label>
+									</li>
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="imposed">
+										<label for="imposed">Оплата при получении (наложенный платеж)</label>
+									</li>
+								</ul>
+								<h3>Способ доставки</h3>
+								<ul class="main-radio">
+									<li>
+										<input type="radio" name="payment" class="radiobut" id="payment-cards">
+										<label for="payment-cards">Банковской картой</label>
+									</li>
+									<li>
+										<input type="radio" name="payment" class="radio" id="payment-cash">
+										<label for="payment-cash">Наличными (самовывоз)</label>
+									</li>
+									<li>
+										<input type="radio" name="payment" class="radio" id="payment-non-cash">
+										<label for="payment-non-cash">Безналичный расчет</label>
+									</li>
+									<li>
+										<input type="radio" name="payment" class="radio" id="payment-imposed">
+										<label for="payment-imposed">Оплата при получении (наложенный платеж)</label>
+									</li>
+								</ul>
+								<h3>Адрес доставки</h3>
+								<ul class="main-radio">
+									<li>
+										<input type="radio" name="address" class="radio" id="address-cards">
+										<label for="address-cards">Склад на Героев Труда —  г. Харьков, ул. Героев Труда 9А</label>
+									</li>
+									<li>
+										<input type="radio" name="address" class="radio" id="address-cash">
+										<label for="address-cash">Склад-магазин «Сантехника» —  г. Харьков, Комсомольское шоссе 11</label>
+									</li>
+								</ul>
+								<ul class="all-info">
+									<li>Ваша скидка (-5%): <span>1 404<span class="grn">грн</span></span></li>
+									<li>Сумма к оплате:<span>28 083<span class="grn">грн</span></span></li>
+									<li>Итого к оплате:<span>26 679<span class="grn">грн</span></span></li>
+									<li><input type="submit" value="Оформить заказ" class="button-orange"></li>
+								</ul>	
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="main-order">
-				<ul class="order-ul clearfix">
-					<li><a href="#" class="order">Заказ № <span>1741</span></a></li>
-					<li id="order-price">Сумма заказа:<span class="price">104 000</span>грн
-					</li>
-					<li id="status">Статус:<span class="status-now">в ожидании</span></li>
-					<li class="checkout">
-						<form action="" method="post" >
-							<input type="submit" value="оформить заказ" class="checkout-submit">
-						</form>
-					</li>
-				</ul>
+				<div class="main-order">
+					<ul class="order-ul clearfix">
+						<li class="block-order"><p class="order">Заказ № <span class="order-span">1741</span></p></li>
+						<li id="order-price">Сумма заказа:<span class="price">104 000</span>грн
+						</li>
+						<li id="status">Статус:<span class="status-now">в ожидании</span></li>
+						<li class="checkout">
+							<form action="" method="post" >
+								<input type="submit" value="оформить заказ" class="checkout-submit">
+							</form>
+						</li>
+					</ul>
+					<div class="product clearfix del">
+						<div class="cards">
+							<div class="clearfix product-card">
+								<img class="bathroom" src="img/bathroom.png" alt="bathroom">
+								<table class="info-bathroom">
+									<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
+									<tbody>
+										<tr class="caption">
+											<td class="first-td">Номенклатура</td>
+											<td>Цена, грн</td>
+											<td>Кол-во</td>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 правая</td>
+											<td>1732,20 грн</td>
+											<th>2
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 левая</td>
+											<td>1832,20 грн</td>
+											<th>5
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 правая</td>
+											<td>1932,20 грн</td>
+											<th>1
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 левая</td>
+											<td>1932,20 грн</td>
+											<th>6
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr class="tr-footer">
+											<td class="first-td">Панель Meza 160/170</td>
+											<td>1932,20 грн</td>
+											<th >13
+												<div class="left-add">
+												</div>
+												<div class="right-add">
+												</div>
+											</th>
+										</tr>
+									</tbody>
+									<caption class="footer-table">Общая стоимость: <span class="price">20 361 грн</span></caption>
+								</table>
+								<div ><span class="fa fa-times cross" aria-hidden="true"></span></div>
+							 </div>
+							<div class="clearfix product-card">
+								<img class="bathroom" src="img/bathroom.png" alt="bathroom">
+								<table class="info-bathroom">
+									<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
+									<tbody>
+										<tr class="caption">
+											<td class="first-td">Номенклатура</td>
+											<td>Цена, грн</td>
+											<td>Кол-во</td>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 правая</td>
+											<td>1732,20 грн</td>
+											<th>2
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 левая</td>
+											<td>1832,20 грн</td>
+											<th>5
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 правая</td>
+											<td>1932,20 грн</td>
+											<th>1
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 левая</td>
+											<td>1932,20 грн</td>
+											<th>6
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr class="tr-footer">
+											<td class="first-td">Панель Meza 160/170</td>
+											<td>1932,20 грн</td>
+											<th >13
+												<div class="left-add">
+												</div>
+												<div class="right-add">
+												</div>
+											</th>
+										</tr>
+									</tbody>
+									<caption class="footer-table">Общая стоимость: <span class="price getPrice">40 300 грн</span></caption>
+								</table>
+								<div ><span class="fa fa-times cross" aria-hidden="true"></span></div>
+							</div>
+							<div class="clearfix product-card">
+								<img class="bathroom" src="img/bathroom.png" alt="bathroom">
+								<table class="info-bathroom">
+									<caption><h3 class="h3">Ванна акриловая MEZA</h3></caption>
+									<tbody>
+										<tr class="caption">
+											<td class="first-td">Номенклатура</td>
+											<td>Цена, грн</td>
+											<td>Кол-во</td>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 правая</td>
+											<td>1732,20 грн</td>
+											<th>2
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 160×100 левая</td>
+											<td>1832,20 грн</td>
+											<th>5
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 правая</td>
+											<td>1932,20 грн</td>
+											<th>1
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr>
+											<td class="first-td">Meza 170×100 левая</td>
+											<td>1932,20 грн</td>
+											<th>6
+												<div class="left-add"></div>
+												<div class="right-add"></div>
+											</th>
+										</tr>
+										<tr class="tr-footer">
+											<td class="first-td">Панель Meza 160/170</td>
+											<td>1932,20 грн</td>
+											<th >13
+												<div class="left-add">
+												</div>
+												<div class="right-add">
+												</div>
+											</th>
+										</tr>
+									</tbody>
+									<caption class="footer-table">Общая стоимость: <span class="price">43 339 грн</span></caption>
+								</table>
+								<div ><span class="fa fa-times cross" aria-hidden="true"></span></div>
+							</div>
+						</div>
+						<div class="wrapper-order">
+							<div class="total-info">
+								<p class="total">Итого к оплате: <span class="total-price">104 000</span><span class="total-price-span">грн</span></p>
+									<button class="button-orange" id="button-total-info">Отправить заказ</button>
+								<p class="info-total-price">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<div class="decor-order">
+								<h2>Выберите способ оплаты и доставки:</h2>
+								<h3>Способ оплаты</h3>
+								<ul class="main-radio">
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="cards">
+										<label for="cards">Банковской картой</label>
+									</li>
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="cash">
+										<label for="cash">Наличными (самовывоз)</label>
+									</li>
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="non-cash">
+										<label for="non-cash">Безналичный расчет</label>
+									</li>
+									<li>
+										<input type="radio" name="payment-method" class="radio" id="imposed">
+										<label for="imposed">Оплата при получении (наложенный платеж)</label>
+									</li>
+								</ul>
+								<h3>Способ доставки</h3>
+								<ul class="main-radio">
+									<li>
+										<input type="radio" name="payment" class="radiobut" id="payment-cards">
+										<label for="payment-cards">Банковской картой</label>
+									</li>
+									<li>
+										<input type="radio" name="payment" class="radio" id="payment-cash">
+										<label for="payment-cash">Наличными (самовывоз)</label>
+									</li>
+									<li>
+										<input type="radio" name="payment" class="radio" id="payment-non-cash">
+										<label for="payment-non-cash">Безналичный расчет</label>
+									</li>
+									<li>
+										<input type="radio" name="payment" class="radio" id="payment-imposed">
+										<label for="payment-imposed">Оплата при получении (наложенный платеж)</label>
+									</li>
+								</ul>
+								<h3>Адрес доставки</h3>
+								<ul class="main-radio">
+									<li>
+										<input type="radio" name="address" class="radio" id="address-cards">
+										<label for="address-cards">Склад на Героев Труда —  г. Харьков, ул. Героев Труда 9А</label>
+									</li>
+									<li>
+										<input type="radio" name="address" class="radio" id="address-cash">
+										<label for="address-cash">Склад-магазин «Сантехника» —  г. Харьков, Комсомольское шоссе 11</label>
+									</li>
+								</ul>
+								<ul class="all-info">
+									<li>Ваша скидка (-5%): <span>1 404<span class="grn">грн</span></span></li>
+									<li>Сумма к оплате:<span>28 083<span class="grn">грн</span></span></li>
+									<li>Итого к оплате:<span>26 679<span class="grn">грн</span></span></li>
+									<li><input type="submit" value="Оформить заказ" class="button-orange"></li>
+								</ul>	
+							</div>
+						</div>
+					</div> 
+				</div>	
+
+
+
+
 			</div>	
 		</div>		
 	</section>
